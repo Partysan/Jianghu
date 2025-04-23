@@ -1,4 +1,16 @@
-[gd_scene format=3 uid="uid://bdron1ag6hqrf"]
+[gd_scene load_steps=2 format=3 uid="uid://bdron1ag6hqrf"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nsakb"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
 
 [node name="Area2D" type="Area2D"]
 position = Vector2(7, 6)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_nsakb")
+animation = &"walk"
